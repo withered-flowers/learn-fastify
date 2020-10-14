@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  
+  <body>
+    <h2><%= header %></h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% data.forEach(elem => { %>
+          <tr>
+            <td><%= elem.id %></td>
+            <td><%= elem.name %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>
